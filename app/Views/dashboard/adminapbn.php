@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="id">
 <head>
     <meta charset="UTF-8">
@@ -97,7 +97,7 @@
                 </a>
                 <ul class="submenu">
                     <li>
-                        <a class="nav-link" href="#" data-target="master-data">
+                        <a class="nav-link" href="<?= base_url('barang/master_data_apbn') ?>">
                             <i class="bi bi-box-seam"></i> Master Data Aset
                         </a>
                     </li>
@@ -173,11 +173,6 @@
             </div>
         </div>
 
-        <!-- Master Data Content -->
-        <div id="master-data" class="content">
-            <h3>Master Data</h3>
-        </div>
-
         <!-- Master User Content -->
         <div id="master-user" class="content">
             <?php echo view('admin/master_user_view'); ?>
@@ -198,7 +193,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    // Sidebar Navigation
+    // Sidebar Navigation (kecuali Master Data Aset karena dia langsung link)
     document.querySelectorAll(".nav-link[data-target]").forEach(item => {
         item.addEventListener("click", function(event) {
             event.preventDefault();

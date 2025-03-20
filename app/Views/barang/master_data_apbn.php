@@ -63,7 +63,7 @@
                     <?php endif; ?>
                 </tbody>
             </table>
-            <a href="<?= base_url('/dashboard/superadmin') ?>" class="btn btn-secondary">Kembali</a>
+
         </div>
     </div>
 </body>
